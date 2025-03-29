@@ -9,6 +9,7 @@ public class SteelGenesis implements ModInitializer {
 	public static final String MOD_ID = "steelgenesis";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+	// Commit Test
 	@Override
 	public void onInitialize() {
 
