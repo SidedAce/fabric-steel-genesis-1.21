@@ -2,6 +2,7 @@ package net.sided.steelgenesis;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.sided.steelgenesis.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,7 +13,7 @@ public class SteelGenesis implements ModInitializer {
 	// Commit Test
 	@Override
 	public void onInitialize() {
-
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		LOGGER.info("Mod Initializing");
 	}
 }
