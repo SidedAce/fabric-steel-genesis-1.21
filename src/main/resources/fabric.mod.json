@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "steelgenesis",
+	"version": "${version}",
+	"name": "Steel Genesis",
+	"description": "Test mod for the Steel Genesis world.",
+	"authors": [
+		"Sided"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/steelgenesis/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sided.steelgenesis.SteelGenesis"
+		],
+		"fabric-datagen": [
+			"net.sided.steelgenesis.SteelGenesisDataGenerator"
+		],
+		"client": [
+			"net.sided.steelgenesis.SteelGenesisClient"
+		]
+	},
+	"mixins": [
+		"steelgenesis.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
